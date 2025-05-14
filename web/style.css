@@ -1,0 +1,103 @@
+body {
+  background: url('assets/wonderland-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Courier New', Courier, monospace;
+  color: #39ff14;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-top: 10%;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 3rem;
+  border-radius: 15px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 15px #39ff14;
+  max-width: 800px;
+  margin: auto;
+}
+
+.invisible-container {
+  margin-top: 10%;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 3rem;
+  border-radius: 15px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  margin: auto;
+}
+
+.start-button {
+  background-color: transparent;
+  border: 2px solid #39ff14;
+  padding: 10px 20px;
+  color: #39ff14;
+  font-size: 1.2rem;
+  text-decoration: none;
+  margin-top: 20px;
+  display: inline-block;
+  transition: 0.3s;
+  display:'flex';
+  justify-content: 'space-between';
+
+}
+
+.start-button:hover {
+  background-color: #39ff14;
+  color: black;
+  cursor: pointer;
+}
+
+body {
+  background: black;
+  color: #00ffcc;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 2rem;
+}
+img {
+  display: block;
+  margin: 2rem auto;
+  max-width: 300px;
+}
+.terminal {
+  background-color: #111;
+  padding: 1rem;
+  border: 1px solid #0f0;
+  margin-top: 1rem;
+}
+
+a c {
+  color: #0ff;
+  text-decoration: none;
+}
+
+.hint {
+  color: #ff0;
+}
+.navigation-button{
+  display: flex;
+  justify-content: space-between;
+}
+.nav-button {
+  background-color: transparent;
+  border: 2px solid #39ff14;
+  padding: 10px 20px;
+  color: #39ff14;
+  font-size: 1.2rem;
+  text-decoration: none;
+  margin-top: 20px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.nav-button:hover {
+  background-color: #39ff14;
+  color: black;
+  cursor: pointer;
+}
