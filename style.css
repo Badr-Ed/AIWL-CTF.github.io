@@ -1,0 +1,10 @@
+body {
+    background: #111;
+    color: #eee;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    margin-top: 15%;
+  }
+  h1 {
+    color: #f0a;
+  }

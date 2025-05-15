@@ -7,9 +7,16 @@ body {
   margin: 0;
   padding: 0;
 }
+.glow{
+    color:#fff;
+    text-shadow:1px 1px 10px #39ff14, 1px 1px 10px #fff;
+    ;
+    font-size:48px;
+    text-align:center;
+}
 
 .container {
-  margin-top: 10%;
+  margin-top: 20%;
   background: rgba(0, 0, 0, 0.75);
   padding: 3rem;
   border-radius: 15px;
@@ -26,10 +33,10 @@ body {
   background: rgba(0, 0, 0, 0.75);
   padding: 3rem;
   border-radius: 15px;
-  width: 80%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
-  max-width: 800px;
+  max-width: 980px;
   margin: auto;
 }
 
@@ -49,6 +56,27 @@ body {
 }
 
 .start-button:hover {
+  background-color: #39ff14;
+  color: black;
+  cursor: pointer;
+}
+
+.language-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  border: 2px solid #39ff14;
+  padding: 5px 7px;
+  color: #39ff14;
+  font-size: 0.75rem;
+  text-decoration: none;
+  transition: 0.3s;
+  font-family: 'Courier New', monospace;
+
+}
+
+.language-button:hover {
   background-color: #39ff14;
   color: black;
   cursor: pointer;
