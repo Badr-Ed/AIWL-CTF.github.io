@@ -1,0 +1,1 @@
+echo flag{the_rabbit_is_running_away}
