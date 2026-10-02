@@ -7,12 +7,13 @@ body {
   margin: 0;
   padding: 0;
 }
-.glow{
-    color:#fff;
-    text-shadow:1px 1px 10px #39ff14, 1px 1px 10px #fff;
-    ;
-    font-size:48px;
-    text-align:center;
+
+.glow {
+  color: #fff;
+  text-shadow: 1px 1px 10px #39ff14, 1px 1px 10px #fff;
+  font-size: 20px;
+  text-align: center;
+  overflow-wrap: break-word;
 }
 
 .container {
@@ -26,6 +27,10 @@ body {
   box-shadow: 0 0 15px #39ff14;
   max-width: 800px;
   margin: auto;
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
 }
 
 .invisible-container {
@@ -33,14 +38,29 @@ body {
   background: rgba(0, 0, 0, 0.75);
   padding: 3rem;
   border-radius: 15px;
-  width: 90%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  max-width: 980px;
+  max-width: 60%;
   margin: auto;
 }
 
-.start-button {
+body {
+  display: block;
+  background: black;
+  color: #00ffcc;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 3rem;
+  border-radius: 10px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+  margin: auto;
+  text-align: center
+}
+
+/* .start-button {
   background-color: transparent;
   border: 2px solid #39ff14;
   padding: 10px 20px;
@@ -59,7 +79,7 @@ body {
   background-color: #39ff14;
   color: black;
   cursor: pointer;
-}
+} */
 
 .language-button {
   position: absolute;
@@ -82,22 +102,22 @@ body {
   cursor: pointer;
 }
 
-body {
-  background: black;
-  color: #00ffcc;
-  font-family: 'Courier New', Courier, monospace;
-  padding: 2rem;
-}
+
+
+
 img {
   display: block;
   margin: 2rem auto;
   max-width: 300px;
 }
-.terminal {
+
+.terminal-hint {
   background-color: #111;
   padding: 1rem;
   border: 1px solid #0f0;
   margin-top: 1rem;
+  color: #ff0;
+  opacity: 0;
 }
 
 a c {
@@ -105,14 +125,18 @@ a c {
   text-decoration: none;
 }
 
-.hint {
-  color: #ff0;
-}
-.navigation-button{
+.navigation-button {
   display: flex;
   justify-content: space-between;
+  gap: 15px;
+  /* Forces a minimum physical gap between buttons */
+  flex-wrap: wrap;
+  /* Prevents overlap if the screen gets too narrow */
 }
+
 .nav-button {
+  flex-direction: row;     
+  justify-content: space-between;    
   background-color: transparent;
   border: 2px solid #39ff14;
   padding: 10px 20px;
@@ -122,6 +146,7 @@ a c {
   margin-top: 20px;
   display: inline-block;
   transition: 0.3s;
+  text-align: center
 }
 
 .nav-button:hover {
