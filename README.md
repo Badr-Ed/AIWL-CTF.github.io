@@ -10,7 +10,7 @@ Welcome to the **Alice in Wonderland CTF**, a capture-the-flag game inspired by 
 
 Launch the CTF directly via GitHub Pages:
 
-👉 **[Go to the loading page](https://badr-ed.github.io/AIWL-CTF.github.io/source)**
+👉 **[Go to the loading page](https://badr-ed.github.io/AIWL-CTF.github.io/)**
 
 > ⚠️ You can also host this project locally using tools like `python3 -m http.server`, Apache, or nginx.
 
