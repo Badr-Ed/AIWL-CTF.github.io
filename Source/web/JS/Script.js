@@ -2,19 +2,13 @@ console.log("Welcome to Wonderland CTF 🐇");
 
 
 
-function showHint(id, buttonElement) {
+function showHint(id, buttonElement, event) {
+  if (event) event.preventDefault();
+
   const element = document.getElementById(id);
-  if (element) {
-    // Check if the page is set to French
-    const isFrench = document.documentElement.lang.toLowerCase() === 'fr';
-    
-    // Toggle visibility
-    if (element.style.opacity === "1") {
-      element.style.opacity = "0";
-      buttonElement.textContent = isFrench ? "Afficher l'indice" : "Show hint";
-    } else {
-      element.style.opacity = "1";
-      buttonElement.textContent = isFrench ? "Masquer l'indice" : "Hide hint";
-    }
-  }
+  if (!element) return;
+
+  const isVisible = element.style.opacity === "1";
+  element.style.opacity = isVisible ? "0" : "1";
+  buttonElement.classList.toggle('active', !isVisible);
 }
