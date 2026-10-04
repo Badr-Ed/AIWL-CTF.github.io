@@ -1,0 +1,14 @@
+server {
+    listen 80;
+    server_name alice-ctf.local www.alice-ctf.local;
+
+    root /var/www/html/alice-ctf.local;
+    index index.html index.htm index.php;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+
+    error_log /var/log/nginx/alice-ctf.local_error.log;
+    access_log /var/log/nginx/alice-ctf.local_access.log;
+}
