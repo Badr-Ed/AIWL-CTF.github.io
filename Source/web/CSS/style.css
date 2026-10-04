@@ -7,6 +7,19 @@ body {
   margin: 0;
   padding: 0;
 }
+body {
+  background: black;
+  color: #00ffcc;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 3rem;
+  border-radius: 10px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+  margin: auto;
+  text-align: center
+}
 
 .glow {
   color: #fff;
@@ -45,20 +58,7 @@ body {
   margin: auto;
 }
 
-body {
-  display: block;
-  background: black;
-  color: #00ffcc;
-  font-family: 'Courier New', Courier, monospace;
-  padding: 3rem;
-  border-radius: 10px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 90%;
-  margin: auto;
-  text-align: center
-}
+
 
 /* .start-button {
   background-color: transparent;
