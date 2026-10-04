@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="refresh" content="120">
+  <a href="Level0_FR.html" class="language-button"> FR</a>
+  <link rel="stylesheet" href="../../CSS/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../../JS/script.js"></script>
+  <title>Level 1: Welcome to Wonderland</title>
+</head>
+
+<body>
+  <div class="invisible-container">
+    <h1>🐇 Welcome to Wonderland 🐇</h1>
+    <h2>Level 0</h2>
+    <p class="story">
+      You awaken in a strange room with only a terminal blinking before you. A message appears:
+      <br><br>
+      <em>"The White Rabbit left you a path... but it's hidden behind a name and a whisper."</em>
+      <br><br><br>
+      Ssh... Alice, you cannot <strong>pass</strong> alice.
+    </p>
+    <div class="terminal-hint">
+      <details>
+        <summary type="button">Hint</summary>
+        <p>$ ls</p>
+      </details>
+
+    </div>
+    <div class="navigation-button">
+      <a href="../../Home.html" class="nav-button"> Home</a>
+      <a href="#" onclick="showHint('hint', this, event)" class="nav-button">Hint</a>
+      <a href="../Level_1/Level1.html" class="nav-button"> Level 1</a>
+    </div>
+    <div id="hint" class="terminal-hint">$ ssh</div>
+  </div>
+</body>
+
+</html>

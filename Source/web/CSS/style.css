@@ -120,6 +120,11 @@ img {
   opacity: 0;
 }
 
+.nav-button.active {
+  background-color: #39ff14;
+  color: #000;
+}
+
 a c {
   color: #0ff;
   text-decoration: none;

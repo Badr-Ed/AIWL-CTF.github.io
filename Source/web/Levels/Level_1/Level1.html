@@ -12,20 +12,19 @@
 </head>
 
 <body>
-  <div class="invisible-container">
-    <h1>🐇 Welcome to Wonderland 🐇</h1>
-    <h2>Niveau 1</h2>
-    <p class="story">
-      You awaken in a strange room with only a terminal blinking before you. A message appears:
-      <br><br>
-      <em>"The White Rabbit left you a path... but it's hidden in the fog of credentials and ports."</em>
-      <br><br>
-      Your task is to find the correct SSH login information hidden within your clues. Once logged in,
-      look for a file that holds the first flag.
-      <br><br>
-      Start the journey by asking: what's in the user's home?
-    </p>
-    <div class="terminal-hint">
+<div class="invisible-container">
+  <h1>🐇 The Invisible Wall 🧱</h1>
+  <h2>Level 1</h2>
+  <p class="story">
+    You step into a silent room. A terminal blinks before you.
+    <br><br>
+    <em>"There is a wall here,"</em> said Alice. <em>"I don't see any wall,"</em> said the Rabbit.
+    <br><br>
+    Not everything that exists is meant to be seen. Some things hide behind a single character.
+    <br><br>
+    Perhaps Alice's home holds more than what the eye can see.
+  </p>
+  <div class="terminal-hint">
       <details>
         <summary type="button">Hint</summary>
         <p>$ ls</p>
@@ -33,9 +32,10 @@
 
     </div>
     <div class="navigation-button">
-      <a href="../../Home.html" class="nav-button"> Home</a>
-      <a href="#" onclick="showHint('hint', this)" class="nav-button">Show hint</a>
-      <a href="../Level_2/Level2.html" class="nav-button"> Level 1</a>
+      <a href="../Level_0/Level0" class="nav-button"> Level 0</a>
+      <!-- <a href="#" onclick="showHint('hint', this) " class="nav-button">Hint</a> -->
+      <a href="#" onclick="showHint('hint', this, event)" class="nav-button">Hint</a>
+      <a href="../Level_2/Level2.html" class="nav-button"> Level 2</a>
     </div>
     <div id="hint" class="terminal-hint">$ ssh</div>
   </div>
