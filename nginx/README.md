@@ -18,10 +18,10 @@ git clone https://github.com/Badr-Ed/AIWL-CTF.github.io ./AIWL-CTF
 Link the project files into the nginx web root. This way, editing anything inside `./AIWL-CTF/` updates the live site automatically.
  
 ```sh
-ln -s ./AIWL-CTF/Source/web                  /var/www/html/alice-ctf.local/Source/web
-ln -s ./AIWL-CTF/alice-ctf.local/index.html  /var/www/html/alice-ctf.local/index.html
-ln -s ./AIWL-CTF/start.js                    /var/www/html/start.js
-ln -s ./AIWL-CTF/style.css                   /var/www/html/alice-ctf.local/style.css
+ln -s /root/CTF/AIWL-CTF/Source/web                 /var/www/html/alice-ctf.local/Source/web
+ln -s /root/CTF/AIWL-CTF/index.html                 /var/www/html/alice-ctf.local/index.html
+ln -s /root/CTF/AIWL-CTF/start.js                   /var/www/html/alice-ctf.local/start.js
+ln -s /root/CTF/AIWL-CTF/style.css                  /var/www/html/alice-ctf.local/style.css
 ```
  
 > **Note:** Make sure the target directories exist before running `ln -s`, otherwise the symlink will be created but will point to nothing. For example:
@@ -36,7 +36,7 @@ ln -s ./AIWL-CTF/style.css                   /var/www/html/alice-ctf.local/style
 Instead of copying the config file into `/etc/nginx/sites-available/`, link it directly from the repository. One file, one place to edit.
  
 ```sh
-ln -s ./AIWL-CTF/nginx/sites-available/alice-ctf.local  /etc/nginx/sites-available/alice-ctf.local
+ln -s ./AIWL-CTF/nginx/sites-available  /etc/nginx/sites-available/alice-ctf.local
 ```
  
 Then enable the site by linking it into `sites-enabled`:
