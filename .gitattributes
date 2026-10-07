@@ -1,2 +1,2 @@
 # Auto detect text files and perform LF normalization
-* text=auto nginx/nginx.conf eol=lf
+* text=auto nginx/nginx.conf text eol=lf
